@@ -66,16 +66,17 @@ for(var i = 0; i < squares.length; i++){
 	var clickedColor = this.style.backgroundColor;
 
 	if(clickedColor === pickedColor){
-		messageDisplay.textContent = "Correct!!"
+		messageDisplay.textContent = "WoW! YOU GOT IT CORRECT!"
 		resetButton.textContent = "Play Again??"
 		changeColors(clickedColor);
 		h1.style.backgroundColor = clickedColor;
 	} else {
 		this.style.backgroundColor = "#232323";
-		messageDisplay.textContent = "TryAgain"
+		messageDisplay.textContent = " Oops You got it Wrong! TRY AGAIN "
 	}
 	});
 }
+
 
 
 function changeColors(color){
